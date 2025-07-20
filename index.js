@@ -19,12 +19,8 @@ import { ObjectId } from 'mongodb';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Load environment variables with explicit path
-const result = dotenv.config({ path: path.join(__dirname, '.env') });
-
-if (result.error) {
-  console.error('Error loading .env file:', result.error);
-  process.exit(1); // Exit if we can't load environment variables
+if (process.env.NODE_ENV !== 'production') {
+  dotenv.config({ path: path.join(__dirname, '.env') });
 }
 
 // Debug logging for environment variables
