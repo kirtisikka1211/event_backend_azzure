@@ -39,7 +39,7 @@ if (!process.env.EMAIL_USER || !process.env.EMAIL_APP_PASSWORD) {
 }
 
 const app = express();
-const PORT = process.env.PORT || 5004;
+const PORT = 8080;
 
 // Middleware
 app.use(cors());
