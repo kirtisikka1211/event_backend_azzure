@@ -1,5 +1,5 @@
-// const API_BASE_URL = 'https://event-backend-1-n491.onrender.com/api';
-const API_BASE_URL = 'http://localhost:5004/api';
+const API_BASE_URL = 'https://eventhh-afcpamdvfxfwfhcj.westindia-01.azurewebsites.net/api';
+// const API_BASE_URL = 'http://localhost:5004/api';
 class ApiClient {
   private token: string | null = null;
 
