@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const mongoURI = process.env.MONGO_URI || 'mongodb+srv://kirtisikka972:38PU53Qqn1KGqvZC@cluster0.0kmpmma.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const mongoURI = process.env.MONGO_URI ;
 
 mongoose.connect(mongoURI, {
   useNewUrlParser: true,
